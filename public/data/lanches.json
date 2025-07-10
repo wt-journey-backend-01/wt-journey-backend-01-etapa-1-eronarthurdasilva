@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nome": "DeBBugger",
+        "descricao": "Hambúrguer de carne bovina com queijo cheddar, alface, tomate e molho especial.",
+        "preco": 15.90
+    },
+    {
+        "id": 2,
+        "nome": "Byte Burger",
+        "descricao": "Hambúrguer de frango grelhado com maionese de ervas, alface e tomate.",
+        "preco": 14.50
+    },
+    {
+        "id": 3,
+        "nome": "Code Crunch",
+        "descricao": "Sanduíche de atum com cebola roxa, picles e molho tártaro.",
+        "preco": 12.00
+    },
+    {
+        "id": 4,
+        "nome": "Pixel Pizza",
+        "descricao": "Pizza de calabresa com cebola, azeitonas e queijo muçarela.",
+        "preco": 22.00
+    },
+    {
+        "id": 5,
+        "nome": "Syntax Salad",
+        "descricao": "Salada fresca com mix de folhas, cenoura ralada, tomate cereja e molho balsâmico.",
+        "preco": 10.50
+    }
+]
