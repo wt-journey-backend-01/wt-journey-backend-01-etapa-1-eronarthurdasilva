@@ -1,0 +1,233 @@
+/* === GERAL === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0f0f;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+/* === TÍTULO === */
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  background: #1e1e1e;
+  color: #00ff88;
+  padding: 20px;
+  margin: 0 0 30px 0;
+  text-align: center;
+  text-shadow: 0 0 5px #00ff88;
+  letter-spacing: 1px;
+}
+
+/* === CARDÁPIO === */
+.cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.cardapio-titulo {
+  text-align: center;
+  color: #00ff88;
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ff88;
+  padding-bottom: 8px;
+}
+
+.lanche {
+  background: #1c1c1c;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,255,136,0.15);
+  padding: 18px;
+  width: 250px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.lanche:hover {
+  transform: scale(1.03);
+}
+
+.lanche h3 {
+  margin: 0 0 8px 0;
+  color: #00ff88;
+  font-family: monospace;
+  font-size: 1.2rem;
+  border-bottom: 1px dashed #00ff88;
+  padding-bottom: 4px;
+}
+
+.lanche p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.lanche .preco {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+/* === FORMULÁRIO DE SUGESTÃO === */
+form {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,255,136,0.15);
+  max-width: 420px;
+  margin: 0 auto 50px auto;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.2rem;
+  color: #00ff88;
+  margin-bottom: 12px;
+  font-family: monospace;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #eaeaea;
+  font-size: 0.95rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #2c2c2c;
+  color: #eaeaea;
+  font-family: monospace;
+}
+
+button {
+  background: #00ff88;
+  color: #0f0f0f;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+button:hover {
+  background: #00cc6a;
+}
+
+/* === LINKS === */
+a {
+  color: #00acee;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === RODAPÉ === */
+footer {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* === CONTATO === */
+.btn-contato-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-contato {
+  background: #00ff88;
+  color: #0f0f0f;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.3s, transform 0.2s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+  display: inline-block;
+}
+
+.btn-contato:hover {
+  background: #00cc6a;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+}
+
+/* === CONTATO === */
+.contato-container {
+  background: #1a1a1a;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,255,136,0.18);
+  max-width: 420px;
+  margin: 0 auto 50px auto;
+}
+
+.contato-container h2 {
+  color: #00ff88;
+  font-family: monospace;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  text-align: center;
+  border-bottom: 1px dashed #00ff88;
+  padding-bottom: 6px;
+}
+
+.contato-container label {
+  color: #eaeaea;
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 0.97rem;
+}
+
+.contato-container input,
+.contato-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #2c2c2c;
+  color: #eaeaea;
+  font-family: monospace;
+}
+
+.contato-container button {
+  background: #00ff88;
+  color: #0f0f0f;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+  transition: background 0.3s;
+}
+
+.contato-container button:hover {
+  background: #00cc6a;
+}
