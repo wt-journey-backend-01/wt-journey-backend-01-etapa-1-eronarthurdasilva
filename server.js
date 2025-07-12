@@ -44,10 +44,23 @@ app.get('/sugestao', (req, res) => {
 });
 
 /* api de lanches*/
-lanches.forEach(lanche => {
-    if (!lanche.id || !lanche.nome || !lanche.ingredientes) {
-        return res.status(400).send('Erro: Cada lanche deve ter id, nome e ingredientes válidos.');
-    }
+// API de lanches com validação
+app.get('/api/lanches', (req, res) => {
+    const filePath = path.join(__dirname, 'public', 'data', 'lanches.json');
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) return res.status(500).send('Erro ao ler o arquivo de lanches');
+        const lanches = JSON.parse(data);
+
+        // Validação dos lanches
+        const invalid = lanches.some(lanche =>
+            !lanche.id || !lanche.nome || !lanche.ingredientes
+        );
+        if (invalid) {
+            return res.status(400).send('Erro: Cada lanche deve ter id, nome e ingredientes válidos.');
+        }
+
+        res.json(lanches);
+    });
 });
 // API de lanches
 app.get('/api/lanches', (req, res) => {

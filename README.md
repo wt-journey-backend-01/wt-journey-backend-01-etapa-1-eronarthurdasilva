@@ -33,5 +33,27 @@ O dev burger é um projeto onde eu apliquei alguns conhecimentos de HTML, CSS e 
    http://localhost:3000
    ```
 
+### Funcionalidades
+- Visualização do cardápio em tempo real
+- Exibição de ingredientes dos hambúrgueres
+- Sugestões de novos hambúrgueres
+- Botão de contato para sugestões e feedback
+
+### Estrutura do Projeto
+```
+dev-burger/
+├── public/
+│   ├── data/
+│   │   └── lanches.json
+│   ├── images/
+│   └── styles/
+│       └── style.css
+├── views/
+│   ├── index.html
+│   └── contato.html
+├── server.js
+└── package.json
+```
+
 ### Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias e correções.
